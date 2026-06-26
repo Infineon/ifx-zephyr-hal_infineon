@@ -1,4 +1,0 @@
-name: hal_infineon_ml_middleware
-build:
-  cmake: zephyr
-  kconfig: zephyr/Kconfig

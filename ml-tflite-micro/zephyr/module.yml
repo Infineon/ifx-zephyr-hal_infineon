@@ -1,4 +1,0 @@
-name: hal_infineon_ml_tflite_micro
-build:
-  cmake: zephyr
-  kconfig: zephyr/Kconfig
