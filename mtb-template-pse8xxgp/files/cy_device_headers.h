@@ -33,6 +33,12 @@
     #else
         #include "pse846gps2dbzc4a.h"
     #endif
+#elif defined(PSE846GPS4DBZC4A)
+    #if defined(COMPONENT_SECURE_DEVICE)
+        #include "pse846gps4dbzc4a_s.h"
+    #else
+        #include "pse846gps4dbzc4a.h"
+    #endif
 #else
     #error "Unsupported PSE84 device."
 #endif
