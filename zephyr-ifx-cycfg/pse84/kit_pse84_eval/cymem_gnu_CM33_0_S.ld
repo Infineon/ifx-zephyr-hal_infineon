@@ -8,18 +8,18 @@ CYMEM_CM33_0_S_m55_code_START = 0x48000000;
 CYMEM_CM33_0_S_m55_code_S_START = 0x58000000;
 CYMEM_CM33_0_S_m55_code_SIZE = 0x00040000;
 CYMEM_CM33_0_S_m55_code_OFFSET = 0x00000000;
-CYMEM_CM33_0_S_user_programmable_START = 0x22011000;
-CYMEM_CM33_0_S_user_programmable_C_START = 0x02011000;
-CYMEM_CM33_0_S_user_programmable_C_S_START = 0x12011000;
-CYMEM_CM33_0_S_user_programmable_S_START = 0x32011000;
-CYMEM_CM33_0_S_user_programmable_SIZE = 0x0002B000;
-CYMEM_CM33_0_S_user_programmable_OFFSET = 0x00011000;
-CYMEM_CM33_0_S_user_nvm_START = 0x2203C000;
-CYMEM_CM33_0_S_user_nvm_C_START = 0x0203C000;
-CYMEM_CM33_0_S_user_nvm_C_S_START = 0x1203C000;
-CYMEM_CM33_0_S_user_nvm_S_START = 0x3203C000;
-CYMEM_CM33_0_S_user_nvm_SIZE = 0x00027000;
-CYMEM_CM33_0_S_user_nvm_OFFSET = 0x0003C000;
+CYMEM_CM33_0_S_bootloader_nvm_START = 0x22011000;
+CYMEM_CM33_0_S_bootloader_nvm_C_START = 0x02011000;
+CYMEM_CM33_0_S_bootloader_nvm_C_S_START = 0x12011000;
+CYMEM_CM33_0_S_bootloader_nvm_S_START = 0x32011000;
+CYMEM_CM33_0_S_bootloader_nvm_SIZE = 0x00028000;
+CYMEM_CM33_0_S_bootloader_nvm_OFFSET = 0x00011000;
+CYMEM_CM33_0_S_user_nvm_START = 0x22039000;
+CYMEM_CM33_0_S_user_nvm_C_START = 0x02039000;
+CYMEM_CM33_0_S_user_nvm_C_S_START = 0x12039000;
+CYMEM_CM33_0_S_user_nvm_S_START = 0x32039000;
+CYMEM_CM33_0_S_user_nvm_SIZE = 0x0002A000;
+CYMEM_CM33_0_S_user_nvm_OFFSET = 0x00039000;
 CYMEM_CM33_0_S_TFM_ITS_START = 0x22063000;
 CYMEM_CM33_0_S_TFM_ITS_C_START = 0x02063000;
 CYMEM_CM33_0_S_TFM_ITS_C_S_START = 0x12063000;
@@ -74,6 +74,24 @@ CYMEM_CM33_0_S_m55_trailer_C_S_START = 0x18840000;
 CYMEM_CM33_0_S_m55_trailer_S_START = 0x70840000;
 CYMEM_CM33_0_S_m55_trailer_SIZE = 0x00040000;
 CYMEM_CM33_0_S_m55_trailer_OFFSET = 0x00840000;
+CYMEM_CM33_0_S_m33s_upgrade_slot_START = 0x60880000;
+CYMEM_CM33_0_S_m33s_upgrade_slot_C_START = 0x08880000;
+CYMEM_CM33_0_S_m33s_upgrade_slot_C_S_START = 0x18880000;
+CYMEM_CM33_0_S_m33s_upgrade_slot_S_START = 0x70880000;
+CYMEM_CM33_0_S_m33s_upgrade_slot_SIZE = 0x00240000;
+CYMEM_CM33_0_S_m33s_upgrade_slot_OFFSET = 0x00880000;
+CYMEM_CM33_0_S_m33_upgrade_slot_START = 0x60AC0000;
+CYMEM_CM33_0_S_m33_upgrade_slot_C_START = 0x08AC0000;
+CYMEM_CM33_0_S_m33_upgrade_slot_C_S_START = 0x18AC0000;
+CYMEM_CM33_0_S_m33_upgrade_slot_S_START = 0x70AC0000;
+CYMEM_CM33_0_S_m33_upgrade_slot_SIZE = 0x00240000;
+CYMEM_CM33_0_S_m33_upgrade_slot_OFFSET = 0x00AC0000;
+CYMEM_CM33_0_S_m55_upgrade_slot_START = 0x60D00000;
+CYMEM_CM33_0_S_m55_upgrade_slot_C_START = 0x08D00000;
+CYMEM_CM33_0_S_m55_upgrade_slot_C_S_START = 0x18D00000;
+CYMEM_CM33_0_S_m55_upgrade_slot_S_START = 0x70D00000;
+CYMEM_CM33_0_S_m55_upgrade_slot_SIZE = 0x00300000;
+CYMEM_CM33_0_S_m55_upgrade_slot_OFFSET = 0x00D00000;
 CYMEM_CM33_0_S_m55_code_secondary_START = 0x26000000;
 CYMEM_CM33_0_S_m55_code_secondary_C_START = 0x06000000;
 CYMEM_CM33_0_S_m55_code_secondary_C_S_START = 0x16000000;
@@ -104,18 +122,12 @@ CYMEM_CM33_0_S_m33s_shared_C_S_START = 0x14001000;
 CYMEM_CM33_0_S_m33s_shared_S_START = 0x34001000;
 CYMEM_CM33_0_S_m33s_shared_SIZE = 0x00001000;
 CYMEM_CM33_0_S_m33s_shared_OFFSET = 0x00001000;
-CYMEM_CM33_0_S_m33s_code_START = 0x24002000;
-CYMEM_CM33_0_S_m33s_code_C_START = 0x04002000;
-CYMEM_CM33_0_S_m33s_code_C_S_START = 0x14002000;
-CYMEM_CM33_0_S_m33s_code_S_START = 0x34002000;
-CYMEM_CM33_0_S_m33s_code_SIZE = 0x00036000;
-CYMEM_CM33_0_S_m33s_code_OFFSET = 0x00002000;
-CYMEM_CM33_0_S_m33s_data_START = 0x24038000;
-CYMEM_CM33_0_S_m33s_data_C_START = 0x04038000;
-CYMEM_CM33_0_S_m33s_data_C_S_START = 0x14038000;
-CYMEM_CM33_0_S_m33s_data_S_START = 0x34038000;
-CYMEM_CM33_0_S_m33s_data_SIZE = 0x00020000;
-CYMEM_CM33_0_S_m33s_data_OFFSET = 0x00038000;
+CYMEM_CM33_0_S_m33s_data_START = 0x24037000;
+CYMEM_CM33_0_S_m33s_data_C_START = 0x04037000;
+CYMEM_CM33_0_S_m33s_data_C_S_START = 0x14037000;
+CYMEM_CM33_0_S_m33s_data_S_START = 0x34037000;
+CYMEM_CM33_0_S_m33s_data_SIZE = 0x00021000;
+CYMEM_CM33_0_S_m33s_data_OFFSET = 0x00037000;
 CYMEM_CM33_0_S_m33_code_START = 0x24058000;
 CYMEM_CM33_0_S_m33_code_C_START = 0x04058000;
 CYMEM_CM33_0_S_m33_code_C_S_START = 0x14058000;
@@ -153,14 +165,14 @@ MEMORY
     m55_data_S : ORIGIN = 0x58040000, LENGTH = 0x00040000
     m55_code : ORIGIN = 0x48000000, LENGTH = 0x00040000
     m55_code_S : ORIGIN = 0x58000000, LENGTH = 0x00040000
-    user_programmable : ORIGIN = 0x22011000, LENGTH = 0x0002B000
-    user_programmable_C : ORIGIN = 0x02011000, LENGTH = 0x0002B000
-    user_programmable_C_S : ORIGIN = 0x12011000, LENGTH = 0x0002B000
-    user_programmable_S : ORIGIN = 0x32011000, LENGTH = 0x0002B000
-    user_nvm : ORIGIN = 0x2203C000, LENGTH = 0x00027000
-    user_nvm_C : ORIGIN = 0x0203C000, LENGTH = 0x00027000
-    user_nvm_C_S : ORIGIN = 0x1203C000, LENGTH = 0x00027000
-    user_nvm_S : ORIGIN = 0x3203C000, LENGTH = 0x00027000
+    bootloader_nvm : ORIGIN = 0x22011000, LENGTH = 0x00028000
+    bootloader_nvm_C : ORIGIN = 0x02011000, LENGTH = 0x00028000
+    bootloader_nvm_C_S : ORIGIN = 0x12011000, LENGTH = 0x00028000
+    bootloader_nvm_S : ORIGIN = 0x32011000, LENGTH = 0x00028000
+    user_nvm : ORIGIN = 0x22039000, LENGTH = 0x0002A000
+    user_nvm_C : ORIGIN = 0x02039000, LENGTH = 0x0002A000
+    user_nvm_C_S : ORIGIN = 0x12039000, LENGTH = 0x0002A000
+    user_nvm_S : ORIGIN = 0x32039000, LENGTH = 0x0002A000
     TFM_ITS : ORIGIN = 0x22063000, LENGTH = 0x00002000
     TFM_ITS_C : ORIGIN = 0x02063000, LENGTH = 0x00002000
     TFM_ITS_C_S : ORIGIN = 0x12063000, LENGTH = 0x00002000
@@ -197,6 +209,18 @@ MEMORY
     m55_trailer_C : ORIGIN = 0x08840000, LENGTH = 0x00040000
     m55_trailer_C_S : ORIGIN = 0x18840000, LENGTH = 0x00040000
     m55_trailer_S : ORIGIN = 0x70840000, LENGTH = 0x00040000
+    m33s_upgrade_slot : ORIGIN = 0x60880000, LENGTH = 0x00240000
+    m33s_upgrade_slot_C : ORIGIN = 0x08880000, LENGTH = 0x00240000
+    m33s_upgrade_slot_C_S : ORIGIN = 0x18880000, LENGTH = 0x00240000
+    m33s_upgrade_slot_S : ORIGIN = 0x70880000, LENGTH = 0x00240000
+    m33_upgrade_slot : ORIGIN = 0x60AC0000, LENGTH = 0x00240000
+    m33_upgrade_slot_C : ORIGIN = 0x08AC0000, LENGTH = 0x00240000
+    m33_upgrade_slot_C_S : ORIGIN = 0x18AC0000, LENGTH = 0x00240000
+    m33_upgrade_slot_S : ORIGIN = 0x70AC0000, LENGTH = 0x00240000
+    m55_upgrade_slot : ORIGIN = 0x60D00000, LENGTH = 0x00300000
+    m55_upgrade_slot_C : ORIGIN = 0x08D00000, LENGTH = 0x00300000
+    m55_upgrade_slot_C_S : ORIGIN = 0x18D00000, LENGTH = 0x00300000
+    m55_upgrade_slot_S : ORIGIN = 0x70D00000, LENGTH = 0x00300000
     m55_code_secondary : ORIGIN = 0x26000000, LENGTH = 0x00040000
     m55_code_secondary_C : ORIGIN = 0x06000000, LENGTH = 0x00040000
     m55_code_secondary_C_S : ORIGIN = 0x16000000, LENGTH = 0x00040000
@@ -217,14 +241,10 @@ MEMORY
     m33s_shared_C : ORIGIN = 0x04001000, LENGTH = 0x00001000
     m33s_shared_C_S : ORIGIN = 0x14001000, LENGTH = 0x00001000
     m33s_shared_S : ORIGIN = 0x34001000, LENGTH = 0x00001000
-    m33s_code : ORIGIN = 0x24002000, LENGTH = 0x00036000
-    m33s_code_C : ORIGIN = 0x04002000, LENGTH = 0x00036000
-    m33s_code_C_S : ORIGIN = 0x14002000, LENGTH = 0x00036000
-    m33s_code_S : ORIGIN = 0x34002000, LENGTH = 0x00036000
-    m33s_data : ORIGIN = 0x24038000, LENGTH = 0x00020000
-    m33s_data_C : ORIGIN = 0x04038000, LENGTH = 0x00020000
-    m33s_data_C_S : ORIGIN = 0x14038000, LENGTH = 0x00020000
-    m33s_data_S : ORIGIN = 0x34038000, LENGTH = 0x00020000
+    m33s_data : ORIGIN = 0x24037000, LENGTH = 0x00021000
+    m33s_data_C : ORIGIN = 0x04037000, LENGTH = 0x00021000
+    m33s_data_C_S : ORIGIN = 0x14037000, LENGTH = 0x00021000
+    m33s_data_S : ORIGIN = 0x34037000, LENGTH = 0x00021000
     m33_code : ORIGIN = 0x24058000, LENGTH = 0x00065000
     m33_code_C : ORIGIN = 0x04058000, LENGTH = 0x00065000
     m33_code_C_S : ORIGIN = 0x14058000, LENGTH = 0x00065000
@@ -251,8 +271,8 @@ REGION_ALIAS("m55_data_sel", m55_data)
 REGION_ALIAS("m55_data_sel_S", m55_data_S)
 REGION_ALIAS("m55_code_sel", m55_code)
 REGION_ALIAS("m55_code_sel_S", m55_code_S)
-REGION_ALIAS("user_programmable_sel", user_programmable_C)
-REGION_ALIAS("user_programmable_sel_S", user_programmable_C_S)
+REGION_ALIAS("bootloader_nvm_sel", bootloader_nvm_C)
+REGION_ALIAS("bootloader_nvm_sel_S", bootloader_nvm_C_S)
 REGION_ALIAS("user_nvm_sel", user_nvm_C)
 REGION_ALIAS("user_nvm_sel_S", user_nvm_C_S)
 REGION_ALIAS("TFM_ITS_sel", TFM_ITS_C)
@@ -273,6 +293,12 @@ REGION_ALIAS("m55_nvm_sel", m55_nvm_C)
 REGION_ALIAS("m55_nvm_sel_S", m55_nvm_C_S)
 REGION_ALIAS("m55_trailer_sel", m55_trailer_C)
 REGION_ALIAS("m55_trailer_sel_S", m55_trailer_C_S)
+REGION_ALIAS("m33s_upgrade_slot_sel", m33s_upgrade_slot_C)
+REGION_ALIAS("m33s_upgrade_slot_sel_S", m33s_upgrade_slot_C_S)
+REGION_ALIAS("m33_upgrade_slot_sel", m33_upgrade_slot_C)
+REGION_ALIAS("m33_upgrade_slot_sel_S", m33_upgrade_slot_C_S)
+REGION_ALIAS("m55_upgrade_slot_sel", m55_upgrade_slot_C)
+REGION_ALIAS("m55_upgrade_slot_sel_S", m55_upgrade_slot_C_S)
 REGION_ALIAS("m55_code_secondary_sel", m55_code_secondary_C)
 REGION_ALIAS("m55_code_secondary_sel_S", m55_code_secondary_C_S)
 REGION_ALIAS("m55_data_secondary_sel", m55_data_secondary_C)
@@ -283,8 +309,6 @@ REGION_ALIAS("gfx_mem_sel", gfx_mem_C)
 REGION_ALIAS("gfx_mem_sel_S", gfx_mem_C_S)
 REGION_ALIAS("m33s_shared_sel", m33s_shared_C)
 REGION_ALIAS("m33s_shared_sel_S", m33s_shared_C_S)
-REGION_ALIAS("m33s_code_sel", m33s_code_C)
-REGION_ALIAS("m33s_code_sel_S", m33s_code_C_S)
 REGION_ALIAS("m33s_data_sel", m33s_data_C)
 REGION_ALIAS("m33s_data_sel_S", m33s_data_C_S)
 REGION_ALIAS("m33_code_sel", m33_code_C)
