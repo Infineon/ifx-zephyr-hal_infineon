@@ -42,21 +42,21 @@ cy_stc_autanalog_cfg_t autonomous_analog_cfg =
     .ac = &CYBSP_AUTONOMOUS_CONTROLLER_cfg,
     .ctb =
     {
-        NULL, 
-        NULL, 
+        NULL,
+        NULL,
     },
     .ptcomp =
     {
-        NULL, 
+        NULL,
     },
     .dac =
     {
-        NULL, 
-        NULL, 
+        NULL,
+        NULL,
     },
     .sar =
     {
-        &CYBSP_SAR_ADC_cfg, 
+        &CYBSP_SAR_ADC_cfg,
     },
 };
 cy_stc_autanalog_stt_t autonomous_analog_stt[] =
@@ -66,21 +66,21 @@ cy_stc_autanalog_stt_t autonomous_analog_stt[] =
         .prb = NULL,
         .ctb =
         {
-            NULL, 
-            NULL, 
+            NULL,
+            NULL,
         },
         .ptcomp =
         {
-            NULL, 
+            NULL,
         },
         .dac =
         {
-            NULL, 
-            NULL, 
+            NULL,
+            NULL,
         },
         .sar =
         {
-            &CYBSP_SAR_ADC_stt[0U], 
+            &CYBSP_SAR_ADC_stt[0U],
         },
     },
     {
@@ -88,21 +88,21 @@ cy_stc_autanalog_stt_t autonomous_analog_stt[] =
         .prb = NULL,
         .ctb =
         {
-            NULL, 
-            NULL, 
+            NULL,
+            NULL,
         },
         .ptcomp =
         {
-            NULL, 
+            NULL,
         },
         .dac =
         {
-            NULL, 
-            NULL, 
+            NULL,
+            NULL,
         },
         .sar =
         {
-            &CYBSP_SAR_ADC_stt[1U], 
+            &CYBSP_SAR_ADC_stt[1U],
         },
     },
     {
@@ -110,21 +110,21 @@ cy_stc_autanalog_stt_t autonomous_analog_stt[] =
         .prb = NULL,
         .ctb =
         {
-            NULL, 
-            NULL, 
+            NULL,
+            NULL,
         },
         .ptcomp =
         {
-            NULL, 
+            NULL,
         },
         .dac =
         {
-            NULL, 
-            NULL, 
+            NULL,
+            NULL,
         },
         .sar =
         {
-            &CYBSP_SAR_ADC_stt[2U], 
+            &CYBSP_SAR_ADC_stt[2U],
         },
     },
 };
@@ -136,28 +136,29 @@ cy_stc_autanalog_t autonomous_analog_init =
 };
 cy_en_autanalog_ac_out_trigger_mask_t CYBSP_AUTONOMOUS_CONTROLLER_out_trig_mask[] =
 {
-    CY_AUTANALOG_AC_OUT_TRIG_MASK_EMPTY, 
-    CY_AUTANALOG_AC_OUT_TRIG_MASK_EMPTY, 
-    CY_AUTANALOG_AC_OUT_TRIG_MASK_EMPTY, 
-    CY_AUTANALOG_AC_OUT_TRIG_MASK_EMPTY, 
-    CY_AUTANALOG_AC_OUT_TRIG_MASK_EMPTY, 
-    CY_AUTANALOG_AC_OUT_TRIG_MASK_EMPTY, 
-    CY_AUTANALOG_AC_OUT_TRIG_MASK_EMPTY, 
-    CY_AUTANALOG_AC_OUT_TRIG_MASK_EMPTY, 
+    CY_AUTANALOG_AC_OUT_TRIG_MASK_EMPTY,
+    CY_AUTANALOG_AC_OUT_TRIG_MASK_EMPTY,
+    CY_AUTANALOG_AC_OUT_TRIG_MASK_EMPTY,
+    CY_AUTANALOG_AC_OUT_TRIG_MASK_EMPTY,
+    CY_AUTANALOG_AC_OUT_TRIG_MASK_EMPTY,
+    CY_AUTANALOG_AC_OUT_TRIG_MASK_EMPTY,
+    CY_AUTANALOG_AC_OUT_TRIG_MASK_EMPTY,
+    CY_AUTANALOG_AC_OUT_TRIG_MASK_EMPTY,
 };
 cy_stc_autanalog_ac_t CYBSP_AUTONOMOUS_CONTROLLER_cfg =
 {
-    .gpioOutEn =   CY_AUTANALOG_STT_AC_GPIO_OUT_DISABLED,
+    .gpioOutEn =
+ CY_AUTANALOG_STT_AC_GPIO_OUT_DISABLED,
     .mask =
     {
-        &CYBSP_AUTONOMOUS_CONTROLLER_out_trig_mask[0U], 
-        &CYBSP_AUTONOMOUS_CONTROLLER_out_trig_mask[1U], 
-        &CYBSP_AUTONOMOUS_CONTROLLER_out_trig_mask[2U], 
-        &CYBSP_AUTONOMOUS_CONTROLLER_out_trig_mask[3U], 
-        &CYBSP_AUTONOMOUS_CONTROLLER_out_trig_mask[4U], 
-        &CYBSP_AUTONOMOUS_CONTROLLER_out_trig_mask[5U], 
-        &CYBSP_AUTONOMOUS_CONTROLLER_out_trig_mask[6U], 
-        &CYBSP_AUTONOMOUS_CONTROLLER_out_trig_mask[7U], 
+        &CYBSP_AUTONOMOUS_CONTROLLER_out_trig_mask[0U],
+        &CYBSP_AUTONOMOUS_CONTROLLER_out_trig_mask[1U],
+        &CYBSP_AUTONOMOUS_CONTROLLER_out_trig_mask[2U],
+        &CYBSP_AUTONOMOUS_CONTROLLER_out_trig_mask[3U],
+        &CYBSP_AUTONOMOUS_CONTROLLER_out_trig_mask[4U],
+        &CYBSP_AUTONOMOUS_CONTROLLER_out_trig_mask[5U],
+        &CYBSP_AUTONOMOUS_CONTROLLER_out_trig_mask[6U],
+        &CYBSP_AUTONOMOUS_CONTROLLER_out_trig_mask[7U],
     },
     .timer =
     {
@@ -221,23 +222,24 @@ cy_stc_autanalog_sar_sta_hs_t CYBSP_SAR_ADC_sta_hs_cfg =
     .hsVref = CY_AUTANALOG_SAR_VREF_VDDA,
     .hsSampleTime =
     {
-        31U, 
-        31U, 
-        31U, 
-        31U, 
+        31U,
+        31U,
+        31U,
+        31U,
     },
     .hsGpioChan =
     {
-        &CYBSP_SAR_ADC_gpio_ch_cfg[0U], 
-        NULL, 
-        NULL, 
-        NULL, 
-        NULL, 
-        NULL, 
-        NULL, 
-        NULL, 
+        &CYBSP_SAR_ADC_gpio_ch_cfg[0U],
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
     },
-    .hsGpioResultMask =   CY_AUTANALOG_SAR_CHAN_MASK_GPIO0,
+    .hsGpioResultMask =
+ CY_AUTANALOG_SAR_CHAN_MASK_GPIO0,
 };
 cy_stc_autanalog_sar_sta_t CYBSP_SAR_ADC_sta_cfg =
 {
@@ -251,32 +253,34 @@ cy_stc_autanalog_sar_sta_t CYBSP_SAR_ADC_sta_cfg =
     .shiftMode = false,
     .intMuxChan =
     {
-        NULL, 
-        NULL, 
-        NULL, 
-        NULL, 
-        NULL, 
-        NULL, 
-        NULL, 
-        NULL, 
-        NULL, 
-        NULL, 
-        NULL, 
-        NULL, 
-        NULL, 
-        NULL, 
-        NULL, 
-        NULL, 
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
     },
     .limitCond =
     {
-        NULL, 
-        NULL, 
-        NULL, 
-        NULL, 
+        NULL,
+        NULL,
+        NULL,
+        NULL,
     },
-    .muxResultMask =   CY_AUTANALOG_SAR_CHAN_MASK_MUX_DISABLED,
-    .firResultMask =   CY_AUTANALOG_SAR_MASK_FIR_DISABLED,
+    .muxResultMask =
+ CY_AUTANALOG_SAR_CHAN_MASK_MUX_DISABLED,
+    .firResultMask =
+ CY_AUTANALOG_SAR_MASK_FIR_DISABLED,
 };
 cy_stc_autanalog_sar_seq_tab_hs_t CYBSP_SAR_ADC_seq_hs_cfg[] =
 {
@@ -752,10 +756,10 @@ const cy_stc_smif_config_t CYBSP_SMIF_CORE_0_XSPI_FLASH_config =
     .dll_divider_value = CY_SMIF_DLL_DIVIDE_BY_2,
     .rx_capture_mode = CY_SMIF_SEL_NORMAL_SPI,
     .mdl_tap = CY_SMIF_MDL_8_TAP_DELAY,
-    .device0_sdl_tap = CY_SMIF_SDL_8_TAP_DELAY,
-    .device1_sdl_tap = CY_SMIF_SDL_8_TAP_DELAY,
-    .device2_sdl_tap = CY_SMIF_SDL_8_TAP_DELAY,
-    .device3_sdl_tap = CY_SMIF_SDL_8_TAP_DELAY,
+    .device0_sdl_tap = CY_SMIF_SDL_1_TAP_DELAY,
+    .device1_sdl_tap = CY_SMIF_SDL_1_TAP_DELAY,
+    .device2_sdl_tap = CY_SMIF_SDL_1_TAP_DELAY,
+    .device3_sdl_tap = CY_SMIF_SDL_1_TAP_DELAY,
     .tx_sdr_extra = CY_SMIF_TX_TWO_PERIOD_AHEAD,
 };
 
@@ -778,7 +782,7 @@ const mtb_hal_memoryspi_configurator_t CYBSP_SMIF_CORE_0_XSPI_FLASH_hal_config =
     .clock = &CYBSP_SMIF_CORE_0_XSPI_FLASH_hal_clock,
     .config = &CYBSP_SMIF_CORE_0_XSPI_FLASH_config,
     .csel = {false, true, false, false},
-    .irqs = CYBSP_SMIF_CORE_0_XSPI_FLASH_MEMORY_MODE_ALIGMENT_ERROR << 5 | CYBSP_SMIF_CORE_0_XSPI_FLASH_RX_DATA_FIFO_UNDERFLOW << 4 | CYBSP_SMIF_CORE_0_XSPI_FLASH_TX_COMMAND_FIFO_OVERFLOW << 3 | CYBSP_SMIF_CORE_0_XSPI_FLASH_TX_DATA_FIFO_OVERFLOW << 2 | (uint8_t)(CYBSP_SMIF_CORE_0_XSPI_FLASH_RX_FIFO_TRIGGER_LEVEL != 0) << 1 | (uint8_t)(CYBSP_SMIF_CORE_0_XSPI_FLASH_TX_FIFO_TRIGGER_LEVEL != 0) << 0,
+    .irqs = CYBSP_SMIF_CORE_0_XSPI_FLASH_MEMORY_MODE_ALIGNMENT_ERROR << 5 | CYBSP_SMIF_CORE_0_XSPI_FLASH_RX_DATA_FIFO_UNDERFLOW << 4 | CYBSP_SMIF_CORE_0_XSPI_FLASH_TX_COMMAND_FIFO_OVERFLOW << 3 | CYBSP_SMIF_CORE_0_XSPI_FLASH_TX_DATA_FIFO_OVERFLOW << 2 | (uint8_t)(CYBSP_SMIF_CORE_0_XSPI_FLASH_RX_FIFO_TRIGGER_LEVEL != 0) << 1 | (uint8_t)(CYBSP_SMIF_CORE_0_XSPI_FLASH_TX_FIFO_TRIGGER_LEVEL != 0) << 0,
     .dmas = CYBSP_SMIF_CORE_0_XSPI_FLASH_RX_DMA_TRIGGER_OUT_USED << 1 | CYBSP_SMIF_CORE_0_XSPI_FLASH_TX_DMA_TRIGGER_OUT_USED << 0,
 };
 #endif /* defined (COMPONENT_MTB_HAL) && (MTB_HAL_DRIVER_AVAILABLE_MEMORYSPI) */
@@ -793,10 +797,10 @@ const cy_stc_smif_config_t CYBSP_SMIF_CORE_1_PSRAM_config =
     .dll_divider_value = CY_SMIF_DLL_DIVIDE_BY_2,
     .rx_capture_mode = CY_SMIF_SEL_NORMAL_SPI,
     .mdl_tap = CY_SMIF_MDL_8_TAP_DELAY,
-    .device0_sdl_tap = CY_SMIF_SDL_8_TAP_DELAY,
-    .device1_sdl_tap = CY_SMIF_SDL_8_TAP_DELAY,
-    .device2_sdl_tap = CY_SMIF_SDL_8_TAP_DELAY,
-    .device3_sdl_tap = CY_SMIF_SDL_8_TAP_DELAY,
+    .device0_sdl_tap = CY_SMIF_SDL_1_TAP_DELAY,
+    .device1_sdl_tap = CY_SMIF_SDL_1_TAP_DELAY,
+    .device2_sdl_tap = CY_SMIF_SDL_1_TAP_DELAY,
+    .device3_sdl_tap = CY_SMIF_SDL_1_TAP_DELAY,
     .tx_sdr_extra = CY_SMIF_TX_TWO_PERIOD_AHEAD,
 };
 
@@ -819,7 +823,7 @@ const mtb_hal_memoryspi_configurator_t CYBSP_SMIF_CORE_1_PSRAM_hal_config =
     .clock = &CYBSP_SMIF_CORE_1_PSRAM_hal_clock,
     .config = &CYBSP_SMIF_CORE_1_PSRAM_config,
     .csel = {false, false, true, false},
-    .irqs = CYBSP_SMIF_CORE_1_PSRAM_MEMORY_MODE_ALIGMENT_ERROR << 5 | CYBSP_SMIF_CORE_1_PSRAM_RX_DATA_FIFO_UNDERFLOW << 4 | CYBSP_SMIF_CORE_1_PSRAM_TX_COMMAND_FIFO_OVERFLOW << 3 | CYBSP_SMIF_CORE_1_PSRAM_TX_DATA_FIFO_OVERFLOW << 2 | (uint8_t)(CYBSP_SMIF_CORE_1_PSRAM_RX_FIFO_TRIGGER_LEVEL != 0) << 1 | (uint8_t)(CYBSP_SMIF_CORE_1_PSRAM_TX_FIFO_TRIGGER_LEVEL != 0) << 0,
+    .irqs = CYBSP_SMIF_CORE_1_PSRAM_MEMORY_MODE_ALIGNMENT_ERROR << 5 | CYBSP_SMIF_CORE_1_PSRAM_RX_DATA_FIFO_UNDERFLOW << 4 | CYBSP_SMIF_CORE_1_PSRAM_TX_COMMAND_FIFO_OVERFLOW << 3 | CYBSP_SMIF_CORE_1_PSRAM_TX_DATA_FIFO_OVERFLOW << 2 | (uint8_t)(CYBSP_SMIF_CORE_1_PSRAM_RX_FIFO_TRIGGER_LEVEL != 0) << 1 | (uint8_t)(CYBSP_SMIF_CORE_1_PSRAM_TX_FIFO_TRIGGER_LEVEL != 0) << 0,
     .dmas = CYBSP_SMIF_CORE_1_PSRAM_RX_DMA_TRIGGER_OUT_USED << 1 | CYBSP_SMIF_CORE_1_PSRAM_TX_DMA_TRIGGER_OUT_USED << 0,
 };
 #endif /* defined (COMPONENT_MTB_HAL) && (MTB_HAL_DRIVER_AVAILABLE_MEMORYSPI) */
@@ -836,6 +840,10 @@ const cy_stc_mcwdt_config_t CYBSP_CM33_LPTIMER_0_config =
     .c1ClearOnMatch = false,
     .c0c1Cascade = true,
     .c1c2Cascade = false,
+    .c0c1carryoutconfig = false,
+    .c0c1matchconfig = false,
+    .c1c2carryoutconfig = false,
+    .c1c2matchconfig = false,
     .c0LowerLimitMode = CY_MCWDT_LOWER_LIMIT_MODE_NOTHING,
     .c0LowerLimit = 0U,
     .c1LowerLimitMode = CY_MCWDT_LOWER_LIMIT_MODE_NOTHING,
@@ -862,6 +870,10 @@ const cy_stc_mcwdt_config_t CYBSP_CM55_LPTIMER_1_config =
     .c1ClearOnMatch = false,
     .c0c1Cascade = true,
     .c1c2Cascade = false,
+    .c0c1carryoutconfig = false,
+    .c0c1matchconfig = false,
+    .c1c2carryoutconfig = false,
+    .c1c2matchconfig = false,
     .c0LowerLimitMode = CY_MCWDT_LOWER_LIMIT_MODE_NOTHING,
     .c0LowerLimit = 0U,
     .c1LowerLimitMode = CY_MCWDT_LOWER_LIMIT_MODE_NOTHING,

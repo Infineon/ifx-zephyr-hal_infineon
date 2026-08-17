@@ -38,6 +38,7 @@
 #include "cycfg_clock_types.h"
 #include "cy_rtc.h"
 #include "cy_gpio.h"
+#include "cy_syspm_pdcm.h"
 
 #if defined(__cplusplus)
 extern "C" {

@@ -75,7 +75,7 @@ extern "C" {
 #define CY_CFG_PWR_VDDIO1_MV 1800
 #define CY_CFG_PWR_CBUCK_VOLT CY_SYSPM_CORE_BUCK_VOLTAGE_0_90V
 #define CY_CFG_PWR_CBUCK_MODE CY_SYSPM_CORE_BUCK_MODE_HP
-#define CY_CFG_PWR_SRAMLDO_VOLT CY_SYSPM_SRAMLDO_VOLTAGE_0_80V
+#define CY_CFG_PWR_SRAMLDO_VOLT CY_SYSPM_SRAMLDO_VOLTAGE_0_90V
 #define CY_CFG_PWR_PD1_DOMAIN 1
 #define CY_CFG_PWR_PPU_MAIN PPU_V1_MODE_FULL_RET
 #define CY_CFG_PWR_PPU_PD1 PPU_V1_MODE_FULL_RET
@@ -144,13 +144,13 @@ extern "C" {
 #define mxsramc_0_mpc_0_RESPONSE CY_MPC_BUS_ERR
 #define mxsramc_0_mpc_0_REGION_COUNT 5U
 #define mxsramc_1_mpc_0_RESPONSE CY_MPC_BUS_ERR
-#define mxsramc_1_mpc_0_REGION_COUNT 2U
+#define mxsramc_1_mpc_0_REGION_COUNT 1U
 #define smif_0_mpc_0_RESPONSE CY_MPC_BUS_ERR
-#define smif_0_mpc_0_REGION_COUNT 10U
+#define smif_0_mpc_0_REGION_COUNT 6U
 #define smif_1_mpc_0_RESPONSE CY_MPC_BUS_ERR
 #define smif_1_mpc_0_REGION_COUNT 0U
 #define socmem_0_mpc_0_RESPONSE CY_MPC_BUS_ERR
-#define socmem_0_mpc_0_REGION_COUNT 2U
+#define socmem_0_mpc_0_REGION_COUNT 1U
 
 #if defined (CY_PDL_TZ_ENABLED)
 extern const cy_stc_mpc_rot_cfg_t M33S_mpc_cfg[];
