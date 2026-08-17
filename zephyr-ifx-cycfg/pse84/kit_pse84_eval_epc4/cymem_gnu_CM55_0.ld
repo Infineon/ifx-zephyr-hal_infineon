@@ -6,12 +6,27 @@ CYMEM_CM55_0_m55_data_OFFSET = 0x00000000;
 CYMEM_CM55_0_m55_code_INTERNAL_START = 0x00000000;
 CYMEM_CM55_0_m55_code_SIZE = 0x00040000;
 CYMEM_CM55_0_m55_code_OFFSET = 0x00000000;
+CYMEM_CM55_0_m33_nvm_START = 0x60340000;
+CYMEM_CM55_0_m33_nvm_SIZE = 0x00200000;
+CYMEM_CM55_0_m33_nvm_OFFSET = 0x00340000;
+CYMEM_CM55_0_m33_trailer_START = 0x60540000;
+CYMEM_CM55_0_m33_trailer_SIZE = 0x00040000;
+CYMEM_CM55_0_m33_trailer_OFFSET = 0x00540000;
 CYMEM_CM55_0_m55_nvm_START = 0x60580000;
 CYMEM_CM55_0_m55_nvm_SIZE = 0x002C0000;
 CYMEM_CM55_0_m55_nvm_OFFSET = 0x00580000;
 CYMEM_CM55_0_m55_trailer_START = 0x60840000;
 CYMEM_CM55_0_m55_trailer_SIZE = 0x00040000;
 CYMEM_CM55_0_m55_trailer_OFFSET = 0x00840000;
+CYMEM_CM55_0_m33s_upgrade_slot_START = 0x60880000;
+CYMEM_CM55_0_m33s_upgrade_slot_SIZE = 0x00240000;
+CYMEM_CM55_0_m33s_upgrade_slot_OFFSET = 0x00880000;
+CYMEM_CM55_0_m33_upgrade_slot_START = 0x60AC0000;
+CYMEM_CM55_0_m33_upgrade_slot_SIZE = 0x00240000;
+CYMEM_CM55_0_m33_upgrade_slot_OFFSET = 0x00AC0000;
+CYMEM_CM55_0_m55_upgrade_slot_START = 0x60D00000;
+CYMEM_CM55_0_m55_upgrade_slot_SIZE = 0x00300000;
+CYMEM_CM55_0_m55_upgrade_slot_OFFSET = 0x00D00000;
 CYMEM_CM55_0_m55_code_secondary_START = 0x26000000;
 CYMEM_CM55_0_m55_code_secondary_SIZE = 0x00040000;
 CYMEM_CM55_0_m55_code_secondary_OFFSET = 0x00000000;
@@ -24,6 +39,9 @@ CYMEM_CM55_0_m33_m55_shared_OFFSET = 0x002FC000;
 CYMEM_CM55_0_gfx_mem_START = 0x2633C000;
 CYMEM_CM55_0_gfx_mem_SIZE = 0x001C4000;
 CYMEM_CM55_0_gfx_mem_OFFSET = 0x0033C000;
+CYMEM_CM55_0_m33_code_START = 0x24058000;
+CYMEM_CM55_0_m33_code_SIZE = 0x00065000;
+CYMEM_CM55_0_m33_code_OFFSET = 0x00058000;
 CYMEM_CM55_0_m33_data_START = 0x240BD000;
 CYMEM_CM55_0_m33_data_SIZE = 0x00040000;
 CYMEM_CM55_0_m33_data_OFFSET = 0x000BD000;
@@ -41,12 +59,18 @@ MEMORY
 {
     m55_data_INTERNAL : ORIGIN = 0x20000000, LENGTH = 0x00040000
     m55_code_INTERNAL : ORIGIN = 0x00000000, LENGTH = 0x00040000
+    m33_nvm : ORIGIN = 0x60340000, LENGTH = 0x00200000
+    m33_trailer : ORIGIN = 0x60540000, LENGTH = 0x00040000
     m55_nvm : ORIGIN = 0x60580000, LENGTH = 0x002C0000
     m55_trailer : ORIGIN = 0x60840000, LENGTH = 0x00040000
+    m33s_upgrade_slot : ORIGIN = 0x60880000, LENGTH = 0x00240000
+    m33_upgrade_slot : ORIGIN = 0x60AC0000, LENGTH = 0x00240000
+    m55_upgrade_slot : ORIGIN = 0x60D00000, LENGTH = 0x00300000
     m55_code_secondary : ORIGIN = 0x26000000, LENGTH = 0x00040000
     m55_data_secondary : ORIGIN = 0x26040000, LENGTH = 0x002BC000
     m33_m55_shared : ORIGIN = 0x262FC000, LENGTH = 0x00040000
     gfx_mem : ORIGIN = 0x2633C000, LENGTH = 0x001C4000
+    m33_code : ORIGIN = 0x24058000, LENGTH = 0x00065000
     m33_data : ORIGIN = 0x240BD000, LENGTH = 0x00040000
     m33s_allocatable_shared : ORIGIN = 0x240FD000, LENGTH = 0x00001000
     m33_allocatable_shared : ORIGIN = 0x240FE000, LENGTH = 0x00001000
@@ -55,12 +79,18 @@ MEMORY
 
 REGION_ALIAS("m55_data_sel", m55_data_INTERNAL)
 REGION_ALIAS("m55_code_sel", m55_code_INTERNAL)
+REGION_ALIAS("m33_nvm_sel", m33_nvm)
+REGION_ALIAS("m33_trailer_sel", m33_trailer)
 REGION_ALIAS("m55_nvm_sel", m55_nvm)
 REGION_ALIAS("m55_trailer_sel", m55_trailer)
+REGION_ALIAS("m33s_upgrade_slot_sel", m33s_upgrade_slot)
+REGION_ALIAS("m33_upgrade_slot_sel", m33_upgrade_slot)
+REGION_ALIAS("m55_upgrade_slot_sel", m55_upgrade_slot)
 REGION_ALIAS("m55_code_secondary_sel", m55_code_secondary)
 REGION_ALIAS("m55_data_secondary_sel", m55_data_secondary)
 REGION_ALIAS("m33_m55_shared_sel", m33_m55_shared)
 REGION_ALIAS("gfx_mem_sel", gfx_mem)
+REGION_ALIAS("m33_code_sel", m33_code)
 REGION_ALIAS("m33_data_sel", m33_data)
 REGION_ALIAS("m33s_allocatable_shared_sel", m33s_allocatable_shared)
 REGION_ALIAS("m33_allocatable_shared_sel", m33_allocatable_shared)
